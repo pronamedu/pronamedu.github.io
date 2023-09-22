@@ -1,0 +1,1286 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Divisible In C Programming - QnA</title>
+    <meta name="description" content="Divisible In C Programming, , , , , , , 0, C Program to find division of two numbers - TechZuk, techzuk.blogspot.com, 1200 x 630, jpeg, , 20, divisible-in-c-programming, QnA" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Divisible In C Programming - QnA" />
+    <meta property="og:description" content="Divisible In C Programming, , , , , , , 0, C Program to find division of two numbers - TechZuk, techzuk.blogspot.com, 1200 x 630, jpeg, , 20, divisible-in-c-programming, QnA" />
+    <meta property="og:site_name" content="QnA" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Divisible In C Programming - QnA" />
+    <meta name="twitter:description" content="Divisible In C Programming, , , , , , , 0, C Program to find division of two numbers - TechZuk, techzuk.blogspot.com, 1200 x 630, jpeg, , 20, divisible-in-c-programming, QnA" />
+    <link rel='stylesheet' id='generate-style-css' href='https://pronamedu.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://pronamedu.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://pronamedu.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://pronamedu.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://pronamedu.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://pronamedu.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://pronamedu.github.io">Home</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://pronamedu.github.io" rel="home"> QnA</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Divisible In C Programming</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">khaijaca29</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Divisible+In+C+Programming" alt="Divisible In C Programming">
+                    </div>
+                    <p></p>
+                    <p>10 The divison develops plans, programs and projects to provido packages of services for women and men health diseases A Lifestyle-Related Diseases Divison B. Chadren&#039;s Health Development Division Infectous Diseases for Elimination Division o Women and Mens Meath Development 11. which among the heat division mentioned below develops plans, programs, and projects to carry out preventive and control strategies against destyle related Sos? A Lifestyle Related Diseases Do out Chidrens Het Development C Infectious Diseases for Emination Division D Women and Nans Health Development Divom 12. Tha vision develops plans programs, and projects to carry out preventive and control strategies against non communicate diseases A Lifestyle Relatos Division B. Childrens Health Development on C Women and Mens Health Development is D. Essential Non-Communicable Diseases Division 13. They develop plans, programs and projects on occupational diseases A Occupational Diseases Division B Environmental Related Diseases Division C Infectious Diseases for Elimination Division D. Essential Non-Communicable Diseases Divo 14. One of their primary responsibilities is to develop plans, programs, and projects on environmental-related diseases. A Children&#039;s Health Development Division B. Environmental-Realed Discos Division C. Infectious Diseases for Elimination Division D. Essential Non-Communicable Diseases Division 15 .This health division develops plans, programs, and projects to carry out preventive and control stratogies against infectious diseases A infectious Diseases for Elimination Division B. Essential Non-Communicable Diseases Division C Women and Men&#039;s Health Development Division Infachexis Diseases for Prevention and Control Division​</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#10-the-divison-develops-plans-programs-and-projects-to-provido-packages-of-services-for-women-and-men-health-diseases-a-lifestyle-related-diseases-divison-b-chadrens-health-development-division-inf">1.
+                                            10 The divison develops plans, programs and projects to provido packages of services for women and men health diseases A Lifestyle-Related Diseases Divison B. Chadren's Health Development Division Infectous Diseases for Elimination Division o Women and Mens Meath Development 11. which among the heat division mentioned below develops plans, programs, and projects to carry out preventive and control strategies against destyle related Sos? A Lifestyle Related Diseases Do out Chidrens Het Development C Infectious Diseases for Emination Division D Women and Nans Health Development Divom 12. Tha vision develops plans programs, and projects to carry out preventive and control strategies against non communicate diseases A Lifestyle Relatos Division B. Childrens Health Development on C Women and Mens Health Development is D. Essential Non-Communicable Diseases Division 13. They develop plans, programs and projects on occupational diseases A Occupational Diseases Division B Environmental Related Diseases Division C Infectious Diseases for Elimination Division D. Essential Non-Communicable Diseases Divo 14. One of their primary responsibilities is to develop plans, programs, and projects on environmental-related diseases. A Children's Health Development Division B. Environmental-Realed Discos Division C. Infectious Diseases for Elimination Division D. Essential Non-Communicable Diseases Division 15 .This health division develops plans, programs, and projects to carry out preventive and control stratogies against infectious diseases A infectious Diseases for Elimination Division B. Essential Non-Communicable Diseases Division C Women and Men's Health Development Division Infachexis Diseases for Prevention and Control Division​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#how-can-i-make-a-c-program-that-can-perform-addition-subtraction-multiplication-and-division-of-five-numbers">2.
+                                            how can i make a c++ program that can perform addition, subtraction, multiplication and division of five numbers</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-the-program-aims-to-reduce-morbidity-and-mortality-from-tuberculosis-by-scaling-up-and-sustaining-coverage-of-dotsimplementation-ensuring-provision-of-quality-tb-services-and-reducing-out-of-pocke">3.
+                                            1. The program aims to reduce morbidity and mortality from tuberculosis by scaling-up and sustaining coverage of DOTSimplementation, ensuring provision of quality TB Services and reducing out-of-pocket expenses related to TB caro.A. National TB Control ProgramC. Malaria Control ProgramB. National HIV, AIDS and STI Prevention and Control Program D. National Dengue Control Program2. Aims to prevent the further spread of HIV infection and reduce the Impact of the disease on individuals, families, sectorsand communities by improving the coverage and quality of prevention programs for persons at most risk, vulnerable andliving with HIV.A. National TB Control ProgramC. Malaria Control ProgramB. National HIV, AIDS and STI Prevention and Control Program D. National Dengue Control Program3. Aims to significantly reduce malaria burden so that it will no longer affect the socio-economic development ofindividuals and families in endemic areas.A. National TB Control ProgramC. Malaria Control ProgramB. National HIV, AIDS and STI Prevention and Control Program D. National Dengue Control Program4. It is directed towards community-based dengue prevention and controlin endemic areas.A. National TB Control ProgramC. Malaria Control ProgramB. National HIV, AIDS and STI Prevention and Control Program D. National Dengue Control Program5. The Rabies Program is jointly implemented by the DOH with the Department of Agriculture (lead agency and theresponsible for canine immunization), Department of Education and the Department of Interior and Local Government(DILG). It aims to eliminate rabies in the Philippines by 2020.A. National Rabies Prevention and Control ProgramB. DOH Major Programs and Projects Classified according to the KRAs of the Social ContractC. Malaria Control ProgramD. National HIV, AIDS and STI Prevention and Control Program6. Aims to develop a comprehensive approach and strategies to increase awareness, information and continuingeducation of health personnel, high-risk individuals, and patients.A. National Rabies Prevention and Control ProgramB. DOH Major Programs and Projects Classified according to the Kras of the Social ContractC. Malaria Control ProgramD. National HIV, AIDS and STI Prevention and Control Program7. IDED Stands forA. Infectious Diseases for Elimination DivisionB. Infectious Diseases for Elimination DepartmentC. Infectious Dilemma for Elimination DivisionD. Interventions for Diseases for Elimination Division8. ODD stands forA. Occupational Diseases DepartmentB. Occupational Distance DivisionC. Occupational Diseases DivisionD. Occurrence Diseases Division9. ERDD stands forA. Educational Related Diseases DivisionB. Experience-Related Diseases DivisionC. Ecological-Related Diseases DivisionD. Environmental-Related Diseases Division​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-what-function-should-be-used-when-adding-the-cells-specified-by-the-condition-or-criteria-a-sumproduct-b-sumif-c-sumifs-d-sumso-2-it-returns-the-integer-portion-of-a-division-a-quotient-b">4.
+                                            1. What function should be used when adding the cells specified by the condition or criteria? a. SUMPRODUCT b. SUMIF C. SUMIFS d. SUMSO 2. It returns the integer portion of a division. a. Quotient b. Sum c. Product d. Power 3.what is the most popular electronic spreadsheet program used today ?a.plus (+) b.minus (-)c. equal (=)d.multiply (×)4.it is an application program designed to perform basic mathematical and arithmetic operations.a.electronic spreadsheet b.slide presentation c.word document d.publisher ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-what-is-considered-as-one-of-the-core-programs-of-the-philippine-populationmanagementa-popcomb-curriculum-and-learning-management-divisionc-adolescent-health-and-youth-development-programd-ip">5.
+                                            1. What is considered as one of the core programs of the Philippine PopulationManagement?A.. POPCOMB. Curriculum and Learning Management DivisionC. Adolescent Health and Youth Development ProgramD. iPLAN​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#4-one-of-their-pamary-responsibilities-is-to-develop-policies-standards-and-guidelines-wanal-disease-a-occupational-diseases-division-fecious-diseases-for-laminaton-division-cerra-neammuable-diseas">6.
+                                            4. One of their pamary responsibilities is to develop policies, standards, and guidelines wanal disease A Occupational Diseases Division fecious Diseases for laminaton Division Cerra Neammuable Diseases Division D Infectious Diseases for Prevention and Control Division 5. h hatte division develops policies, standards and guidelines on women and mens health diseases A Lifestyle Related Diseases Division B Chadrens Health Development Division C Women and Men's Health Development Division D Essential Non-Communicable Diseases Owvision 6 .Wych or the division mendoneu volow develops policies. Standards, and oudends on children's health diseases? A Children's Health Development Division B. Environmental- Rited Diseases Division Inichous Diseases for Elimination Division D. Essenbal Non-Communicable Diseases Division This civision develops 7.policies, standards, and guidelines for the prevention and control or non-communicable diseases. A Environmental-Related Diseases Division B. Infectious Diseases for Elimination Division C Essential Non-Communicable Diseases Division 0. Infectious Diseases for Prevention and Control Division e. They develop policies, standards and guidelines for the preventon and control of lifestyle-related diocases A Lesiye Rekli Dieses Division 8. Children's Health Development Division C Infectious Diseases for Elimination Division D. Women and Men's Health Development Division 9. One of their primary responsibilities is to develop plans, programs, and projects to pode servec sokages for children's health diseases A Lifestvie-Related Diseases Division D Children's Health Development Division C Women and Men's Health Development Division O Locosta: Non Communicab Diseases Division​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#%c2%a0this-study-attempted-to-evaluate-the-status-and-extent-of-implementation-of-the-computer-education-program-in-the-division-of-rizal-sy-2015-2016-as-perceived-by-teacher-and-student-respondents">7.
+                                             This study attempted to evaluate the status and extent of implementation of the Computer Education Program in the Division of Rizal SY 2015-2016 as perceived by teacher and student respondents. This statement is an example of? A. Objective or Purpose of the StudyB. Specific Question C. Research Question D. Introduction ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-which-of-the-following-is-not-a-manifest-function-of-educationa-cultural-innovationc-socializationb-courtshipd-transmission-of-culture2-conflict-theorists-see-sorting-as-a-way-toa-challenge-gif">8.
+                                            1. Which of the following is not a manifest function of education?a Cultural innovationc Socializationb. Courtshipd. Transmission of Culture2. Conflict theorists see sorting as a way toa Challenge gifted studentsb. Help students who need additional supportс. Reinforce divisions of economic statusd. Teach respect for authority3. The functionalist theory sees education as serving the needs ofa Societyc. Familiesb. Individualsd The government4. What term describes the assignment of students to specific education programs on the basis of previoustest scores or grades and their perceived abilities?a. Hidden curriculumc Labelingb. Self-fulfilling prophecyd. Tracking5. Which of the following is an example of nonformal education?a Primary schoolingc. Adult night classesb. Senior high schoold. Doctorate program​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#_____1-these-are-used-exclusively-by-the-pascal-programming-languages-such-as-commands-standard-functions-and-proceduresa-symbols-c-reserved-wordsb-modulus-divisiond-integer-division-_____-12-it-i">9.
+                                            _____1 These are used exclusively by the Pascal Programming languages such as commands standard functions and proceduresa. Symbols c. Reserved Wordsb. Modulus Divisiond. Integer Division _____ 12 It is the first statement in a programa. Declaration Areas c. Heading b. Body of the programd. End of the Program ______ 13 It consist usually with the list of variables. a. Declaration Areas C. Headingb Body of the program d End of the Program _______ 14. It is where data types, constants, variables are defined together with procedures and functions.a. Declaration Areas c. Heading b. Body of the program d End of the Program _________15 These are memory location which can assign a specific name. Variables Labels b Symbols d. Types_______16 It is in nature it allows for effective teaching computer programming techniquesa. Simplicity and expressiveb. built in datac. Areas of applicationd. user defined data types_____17 It entails the learning environmenta. Simplicity and expressiveb. built in datac. Areas of applicationd. user defined data types​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-it-is-a-name-that-represents-either-a-number-or-a-stringa-stringb-constantc-variabled-none-of-these2-this-programming-language-was-developed-by-john-kemeny-and-thomaskurtz-in-thea-1950sb-196">10.
+                                            1. It is a name that represents either a number or a stringa. stringb. constantC. variabled. none of these2. This programming language was developed by John Kemeny and ThomasKurtz in thea. 1950sb. 1960sC. 1970sd. 1940S3. These are special symbols used to indicate arithmetic operationsa. string b. operators C. constantd. variable4. It is a sequence of constants and variables joined by arithmetic operatorsa. constant b. variablesc. expressionsd. string5. It has the highest precedence of the arithmetic operatorsa. ExponentiationC. Divisionb. Multiplicationd. Addition​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-what-do-you-call-to-the-operators-like-addition-subtraction-divison-and-multiplicationa-pemdasb-arithmetic-operatorsc-artithmetic2-other-opertors-includea-mod-round-b-pick-randomc">11.
+                                            1.What do you call to the operators like addition, subtraction, divison, and multiplication?a. PEMDASb. arithmetic operatorsc. artithmetic2. other opertors include:a. mod &amp; round b. pick randomc. variable3. this operator returns the remainder of division operatora. roundb. pickc. mod4. it lets a program picka a random number according to the specified range.a. modb. pick ramdomc. round5. it tells the sprite to show the next costume below it.a. next costumeb. switch costumec. switch backdrop6. this block lets the sprite switch to a specific costume.a. next costume b. switch costumec. switch backdrop7. it enables to change to another backdrop at any point in the program.a. next costumeb. swtich costumec  switch backdrop​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#which-of-the-following-operators-is-not-used-to-create-control-in-a-programa-divisionb-equal-toc-less-thand-logical-or">12.
+                                            Which of the following operators is NOT used to create control in a program?
+a.
+division
+b.
+equal to
+c.
+less than
+d.
+logical or</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#daming-task-2-arrange-the-following-facts-to-form-a-news-report-a-teacher-induction-program-is-a-training-given-to-the-newly-hired-teachers-one-of-its-purposes-is-to-let-them-understand-their-roles">13.
+                                            Daming Task 2: Arrange the following facts to form a news report A. Teacher Induction Program is a training given to the newly hired teachers. One of its purposes is to let them understand their roles and responsibilities. B. The Division of Solera, through the leadership of the superintendent, Melanie Roxas, EdD. Conducted the Teacher Induction Program to 320 newly hired teachers at Liza's Resort, Zamboanga Sibugay on July 2-4 this year. C. Education Program Supervisors who were trained on TIP were facilitators. D. Division of Solera conducts Teacher Induction Program to 320 newly hired Teachers.​pa help po need ko napo</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#program-course-section-assessment-s-answer-the-following-correctly-1-determine-if-the-specified-operation-is-a-binary-operation-on-the-given-se-justify-your-answer-a-the-operation-subtraction-o">14.
+                                            Program course / Section: Assessment #s Answer the following correctly 1. Determine if the specified operation is a binary operation on the given se Justify your answer. a. The operation subtraction on the set of odd numbers. b. The operation division on the set of natural numbers. C. The operation defined by a'b = 5a + b on the set of even numbers. d. The operation " defined by a*b = 2a – b on the set of whole numbers. e. The operation * defined by a'b = on the set of rational numbers.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#4-one-of-their-pamary-responsibilities-is-to-develop-policies-standards-and-guidelines-wanal-disease-a-occupational-diseases-division-fecious-diseases-for-laminaton-division-cerra-neammuable-diseas">15.
+                                            4. One of their pamary responsibilities is to develop policies, standards, and guidelines wanal disease A Occupational Diseases Division fecious Diseases for laminaton Division Cerra Neammuable Diseases Division D Infectious Diseases for Prevention and Control Division 5. h hatte division develops policies, standards and guidelines on women and mens health diseases A Lifestyle Related Diseases Division B Chadrens Health Development Division C Women and Men's Health Development Division D Essential Non-Communicable Diseases Owvision 6 .Wych or the division mendoneu volow develops policies. Standards, and oudends on children's health diseases? A Children's Health Development Division B. Environmental- Rited Diseases Division Inichous Diseases for Elimination Division D. Essenbal Non-Communicable Diseases Division This civision develops 7.policies, standards, and guidelines for the prevention and control or non-communicable diseases. A Environmental-Related Diseases Division B. Infectious Diseases for Elimination Division C Essential Non-Communicable Diseases Division 0. Infectious Diseases for Prevention and Control Division e. They develop policies, standards and guidelines for the preventon and control of lifestyle-related diocases A Lesiye Rekli Dieses Division 8. Children's Health Development Division C Infectious Diseases for Elimination Division D. Women and Men's Health Development Division 9. One of their primary responsibilities is to develop plans, programs, and projects to pode servec sokages for children's health diseases A Lifestvie-Related Diseases Division D Children's Health Development Division C Women and Men's Health Development Division O Locosta: Non Communicab Diseases Division​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#learning-task-4-directions-arrange-the-following-facts-to-form-a-news-report-write-your-answer-in-a-paragraph-form-in-your-notebook-a-teacher-induction-program-is-a-training-given-to-the-newly-hir">16.
+                                            Learning Task 4 Directions: Arrange the following facts to form a news report. Write your answer in a paragraph form in your notebook. A. Teacher Induction Program is a training given to the newly hired teachers. One of its purposes is to let them understand their roles and responsibilities. B. The Division of Solera, through the leadership of the superintendent, Melanie Roxas, EdD. Conducted the Teacher Induction Program to 320 newly hired teachers at Liza's Resort, Zamboanga Sibugay on July 2-4 this year. C. Education Program Supervisors who were trained on TIP were facilitators. D, Division of Solera conducts Teacher Induction Program to 320 newly hired Teachers.pakisagot ng maayos. :/​tank you </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#create-a-program-that-will-ask-the-user-to-input-integer-values-for-variables-x-and-y-after-asking-for-values-of-variables-x-and-y-the-program-will-ask-the-user-to-input-the-case-she-wanted-the-prog">17.
+                                            Create a program that will ask the user to input integer values for variables x and y. After asking for values of variables x and y, the program will ask the user to input the case she wanted the program to perform and display on the screen the result of the operation. Use default for inputs that are not in the cases. Below are the cases and its corresponding mathematical operation. c++ language
+ a=addition
+ b=subtraction
+ c=multiplication
+ d=division</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#7-cebu-province-division-has-opened-two-ways-for-enrollment-ofstudents-online-and-via-phone-call-a-act-of-listing-pupilsc-act-of-assessing-pupilsb-act-of-grading-pupilsd-act-of-teaching-pupilsd">18.
+                                            7. Cebu Province Division has opened two ways for enrollment ofstudents; online and via phone call.a. act of listing pupilsc. act of assessing pupilsb. act of grading pupilsd. act of teaching pupilsd. offers8. DepEd Commons expands features for ALS learners.b. discountsc. traitsa. aspects9. Social Amelioration Program (SAP) beneficiaries have received their cashsubsidy.a. giversb. recipientsd. volunteersc. sponsors10. LGU Consolacion distributed relief goods to its constituents.a. leadersb. non-members c. membersd. non-votersVERSION​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#learning-task-4-directions-arrange-the-following-facts-to-form-a-news-report-write-your-answer-in-a-paragraph-form-in-your-notebook-a-teacher-induction-program-is-a-training-given-to-the-newly-hir">19.
+                                            Learning Task 4 Directions: Arrange the following facts to form a news report. Write your answer in a paragraph form in your notebook. A. Teacher Induction Program is a training given to the newly hired teachers. One of its purposes is to let them understand their roles and responsibilities. B. The Division of Solera, through the leadership of the superintendent, Melanie Roxas, EdD. Conducted the Teacher Induction Program to 320 newly hired teachers at Liza’s Resort, Zamboanga Sibugay on July 2-4 this year. C. Education Program Supervisors who were trained on TIP were facilitators. D, Division of Solera conducts Teacher Induction Program to 320 newly hired Teachers. _________________ _______________________________________________________________________________________________________ _____________________________________________________________________________________________________________ _____________________________________________________________________________________________________________ _____________________________________________________________________________________________________________ ______________________________________________________________________________________________________________ need now please</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#in-ms-excel-a-chart-is-a-visual-representation-of-data-in-worksheet-of-the-spreadsheet-program-what-are-the-symbols-use-for-the-following-1-multiplication-c2-division-3-addition-4-subtraction-5">20.
+                                            In MS Excel, a chart is a visual representation of data in worksheet of the spreadsheet program. What are the symbols use for the following? 1. Multiplication C2. Division 3. Addition 4 Subtraction 5. Equal​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#which-of-the-following-is-not-an-example-of-social-mobilization-a-edsa-revolution-b-human-rights-rally-c-division-presscon-d-livelihood-program-meeting-%e2%80%8b">21.
+                                            which of the following is not an example of social mobilization A. edsa revolution B. human rights rally C. division presscon D. livelihood program meeting ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#which-of-the-following-statements-shown-below-is-not-essential-in-linear-programmingselect-onea-limited-resourcesb-homogeneityc-equalityd-divisibilityi-brainliest-ko-yung-maayos-na-sagot">22.
+                                            Which of the following statements shown below is NOT essential in Linear Programming?
+Select one:
+a.
+Limited Resources
+b.
+Homogeneity
+c.
+Equality
+d.
+Divisibility
+i brainliest ko yung maayos na sagot!</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#the-most-popular-electronic-spreadsheet-program-that-we-used-today-is-microsoft-excel-which-function-returns-the-integer-portion-of-a-divisiona-powerb-productc-quotientd-sum%e2%80%8b">23.
+                                            The most popular electronic spreadsheet program that we used today is Microsoft Excel. Which function returns the integer portion of a division?A PowerB. ProductC. QuotientD. Sum​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#7-this-division-develops-policies-standards-and-guidelines-for-the-prevention-and-control-of-non-communicable-diseases-a-environmental-related-diseases-division-b-infectious-diseases-for-elimina">24.
+                                            7. This division develops policies, standards, and guidelines for the prevention and control of non-communicable diseases. A. Environmental-Related Diseases Division B. Infectious Diseases for Elimination Division C. Essential Non-Communicable Diseases Division D. Infectious Diseases for Prevention and Control Division 8. They develop policies, standards and guidelines for the prevention and control of lifestyle-related diseases. A. Lifestyle-Related Diseases Division B. Children's Health Development Division C. Infectious Diseases for Elimination Division D. Women and Men's Health Development Division 9. One of their primary responsibilities is to develop plans, programs, and projects to provide service packages for children's health diseases. A. Lifestyle-Related Diseases Division B. Children's Health Development Division C. Women and Men's Health Development Division D. Essential Non-Communicable Diseases Division​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#health-notebookgood-day-i-won%e2%80%99t-be-around-today-kindly-do-this-in-our-mapeh-time-pls-let-your-class-president-and-class-secretary-sign-your-notebooks-thank-you-what-i-knowpaper-______1">25.
+                                            Health   NotebookGood day, I won’t be around today. Kindly do this in our MAPEH time. Pls let your class president and class secretary sign your notebooks. Thank you. What I Knowpaper.______1. Which of the division mentioned below develops policies, standards, and guidelines for the elimination of infectious disease?A. OccupationalDiseasesDivisionB. Environmental-RelatedDiseasesDivisionC. InfectiousDiseasesforEliminationDivisionD. EssentialNon-CommunicableDiseasesDivision______2. This division develops policies, standards, and guidelines for the prevention and control of infectious disease.A. Environmental-Related Diseases DivisionB. InfectiousDiseasesforEliminationDivisionC. EssentialNon-CommunicableDiseasesDivisionD. Infectious Diseases for Prevention and Control Division______3. They develop policies, standards and guidelines on environmental-related diseases.A. OccupationalDiseasesDivisionB. Environmental-RelatedDiseasesDivisionC. EssentialNon-CommunicableDiseasesDivision D. Women and Men’s Health Development Division______4. One of their primary responsibilities is to develop policies, standards, and guidelines on occupational diseases.A. Occupational Diseases DivisionB. Infectious Diseases for Elimination DivisionC. Essential Non-Communicable Diseases DivisionD. Infectious Diseases for Prevention and Control Division______5. This health division develops policies, standards and guidelines on women and men’s health diseases.A. Lifestyle-Related Diseases DivisionB. Children’s Health Development DivisionC. Women and Men’s Health Development Division D. Essential Non-Communicable Diseases Division______6. Which of the division mentioned below develops policies, standards, and guidelines on children’s health diseases?A. Children’s Health Development DivisionB. Environmental-Related Diseases DivisionC. Infectious Diseases for Elimination DivisionD. Essential Non-Communicable Diseases Division______7. This division develops policies, standards, and guidelines for the prevention and control of non-communicable diseases.A. Environmental-Related Diseases DivisionB. Infectious Diseases for Elimination DivisionC. Essential Non-Communicable Diseases DivisionD. Infectious Diseases for Prevention and Control Division______8. They develop policies, standards and guidelines for the prevention and control of lifestyle- related diseases.A. Lifestyle-Related Diseases DivisionB. Children’s Health Development DivisionC. Infectious Diseases for Elimination DivisionD. Women and Men’s Health Development Division______9. One of their primary responsibilities is to develop plans, programs, and projects to provide service packages for children’s health diseases.A. Lifestyle-Related Diseases DivisionB. Children’s Health Development DivisionC. Women and Men’s Health Development Division D. Essential Non-Communicable Diseases Division______10. This division develops plans, programs and projects to provide packages of services for women and men health diseases.A. Lifestyle-Related Diseases DivisionB. Children’s Health Development DivisionC. Infectious Diseases for Elimination DivisionD. Women and Men’s Health Development Division​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-write-a-c-program-that-will-print-numbers-divisible-by-3-and-7-between-the-range-provided-by-the-user-2-write-a-c-program-that-repeatedly-print-the-value-of-the-variable-dnumber-decreasing-i">26.
+                                            1. Write a C++ program that will print numbers divisible by 3 and 7 between the range provided by the user. 2. Write a C++ program that repeatedly print the value of the variable dNumber, decreasing it by 0.25 each time, as long as dNumber remains positive. The user will input the value of dNumber. 3. Write a C++ program that will print the square roots of the first 30 odd positive integers.ps: need proper answer​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#healthidentification-read-each-item-carefully-and-choose-the-letter-of-the-best-answer-write-your-answer-in-alengthwise-sheet-of-paper-1-people-say-that-hands-are-the-dirtiest-part-of-the-body-wha">27.
+                                            HealthIDENTIFICATION: Read each item carefully and choose the letter of the best answer. Write your answer in alengthwise sheet of paper.1. People say that hands are the dirtiest part of the body. What do you think is the main reason for this?A. You eat with your bare hands by washing it thoroughly.B. You are observing 1 meter distance to avoid from touching others.C. You are using a face shield to get off your hands from your face.D. Your hands are used in touching everything.2. Which of the following statement is FALSE?A. If you are sick, the air that comes out of your mouth when you cough or sneeze may containgerms.B. It is important to wash your hands even if they do not look dirty.C. When you are sick, it is important to stay at home to get well sooner and will not spread germs.D. Vaccines cannot prevent many infectious diseases.3. What type of disease is one that is caused by newly discovered infectious agent that is threatening to increase in thenear future?A. Communicable DiseaseC. Non communicable DiseaseB. Emerging Infectious DiseaseD. Re-emerging Infectious Disease4. Another type of disease that is one which was previously controlled but once again has risen to be a significant healthproblem.A. Communicable DiseaseC. Non communicable DiseaseB. Emerging Infectious DiseaseD. Re-emerging Infectious Disease5. What agency is responsible in developing policies, standards and guidelines for the elimination of infectious diseases?A. Environmental-Related Diseases DivisionC. Lifestyle-Related Diseases DivisionB. Infectious Diseases for Elimination DivisionD. Women and Men's Health Development Division6. The agency responsible in developing plans, programs and projects to carry out preventive and control strategiesagainst non-communicable diseases.A. Children's Health Development DivisionC. Infectious Diseases for Prevention and Control DivisionB. Essential Non-Communicable Diseases Division D. Occupational Diseases Division​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#write-a-program-that-mimics-a-calculator-the-program-should-take-as-input-two-integers-and-the-operation-to-be-performed-it-should-then-output-the-number-the-operator-and-the-result-for-division">28.
+                                            Write a program that mimics a calculator. The program should take as input two integers and the operation to be performed. It should then output the number, the operator and the result. (For division, if the denominator is zero, output an appropriate message). CODING C# ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#which-of-the-following-statements-shown-below-is-not-essential-in-linear-programmingselect-onea-homogeneityb-limited-resourcesc-equalityd-divisibility">29.
+                                            Which of the following statements shown below is NOT essential in Linear Programming?
+Select one:
+a.
+Homogeneity
+b.
+Limited Resources
+c.
+Equality
+d.
+Divisibility</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#15-this-health-division-develops-plans-programs-and-projects-to-carry-out-preventive-and-control-stratocies-against-intectious-diseases-a-infectious-diseases-for-elimination-division-b-essentia-no">30.
+                                            15 This health division develops plans, programs, and projects to carry out preventive and control stratocies against intectious diseases A infectious Diseases for Elimination Division B. Essentia! Non Communicable Diseases Division C. Women and Men's Health Developmeni Division Decisis Diseases to Prevention and Control Design​</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="10-the-divison-develops-plans-programs-and-projects-to-provido-packages-of-services-for-women-and-men-health-diseases-a-lifestyle-related-diseases-divison-b-chadrens-health-development-division-inf">
+                            1. 10 The divison develops plans, programs and projects to provido packages of services for women and men health diseases A Lifestyle-Related Diseases Divison B. Chadren's Health Development Division Infectous Diseases for Elimination Division o Women and Mens Meath Development 11. which among the heat division mentioned below develops plans, programs, and projects to carry out preventive and control strategies against destyle related Sos? A Lifestyle Related Diseases Do out Chidrens Het Development C Infectious Diseases for Emination Division D Women and Nans Health Development Divom 12. Tha vision develops plans programs, and projects to carry out preventive and control strategies against non communicate diseases A Lifestyle Relatos Division B. Childrens Health Development on C Women and Mens Health Development is D. Essential Non-Communicable Diseases Division 13. They develop plans, programs and projects on occupational diseases A Occupational Diseases Division B Environmental Related Diseases Division C Infectious Diseases for Elimination Division D. Essential Non-Communicable Diseases Divo 14. One of their primary responsibilities is to develop plans, programs, and projects on environmental-related diseases. A Children's Health Development Division B. Environmental-Realed Discos Division C. Infectious Diseases for Elimination Division D. Essential Non-Communicable Diseases Division 15 .This health division develops plans, programs, and projects to carry out preventive and control stratogies against infectious diseases A infectious Diseases for Elimination Division B. Essential Non-Communicable Diseases Division C Women and Men's Health Development Division Infachexis Diseases for Prevention and Control Division​</h2><br />
+                        <p><strong>Answer:</strong></p><p>10. <strong>Women</strong><strong> </strong><strong>and</strong><strong> </strong><strong>Men's</strong><strong> </strong><strong>Heal</strong><strong>th</strong><strong> </strong><strong>Deve</strong><strong>lopment</strong><strong> </strong><strong>Divi</strong><strong>sion</strong></p><p>11. <strong>Lifest</strong><strong>yle</strong><strong>-Related</strong><strong> </strong><strong>Diseas</strong><strong>es</strong><strong> </strong><strong>Divi</strong><strong>sion</strong><strong> </strong><strong>out</strong></p><p>12. <strong>Essen</strong><strong>tial</strong><strong> </strong><strong>Non-Communicable</strong><strong> </strong><strong>Disea</strong><strong>se</strong><strong> </strong><strong>Div</strong><strong>ision</strong></p><p>13. <strong>Occupat</strong><strong>ion</strong><strong> </strong><strong>Disea</strong><strong>ses</strong><strong> </strong><strong>Division</strong></p><p>14. <strong>Envi</strong><strong>ronment</strong><strong>-Relate</strong><strong>d</strong><strong> </strong><strong>Disea</strong><strong>ses</strong><strong> </strong><strong>Division</strong></p><p>15. <strong>Infec</strong><strong>tion</strong><strong> </strong><strong>Disea</strong><strong>ses</strong><strong> </strong><strong>for</strong><strong> </strong><strong>Elimination</strong><strong> </strong><strong>Div</strong><strong>ision</strong></p><p><strong>Explanation:</strong></p><p></p><p>correct me kong wrong</p><br />
+                                            <h2 class="ez-toc-section" id="how-can-i-make-a-c-program-that-can-perform-addition-subtraction-multiplication-and-division-of-five-numbers">
+                            2. how can i make a c++ program that can perform addition, subtraction, multiplication and division of five numbers</h2><br />
+                        i like scripting you can use this source code <br />/* Source code to create a simple calculator for addition, subtraction, multiplication and division using switch...case statement in C programming. */
+
+# include &lt;stdio.h&gt;
+int main()
+{
+     char operator;
+     float num1,num2;
+     printf("Enter operator either + or - or * or divide : ");
+     scanf("%c",&amp;operator);
+     printf("Enter two operands: ");
+     scanf("%f%f",&amp;num1,&amp;num2);
+     switch(operator)
+     {
+     case '+':
+              printf("num1+num2=%.2f",num1+num2);
+              break;
+     case '-':
+              printf("num1-num2=%.2f",num1-num2);
+              break;
+     case '*':
+              printf("num1*num2=%.2f",num1*num2);
+              break;
+     case '/':
+              printf("num2/num1 = %.2f",num1/num2);
+              break;
+     default:
+/* If operator is other than +, -, * or /, error message is shown */
+              printf("Error! operator is not correct");
+              break;
+     }
+     return 0;
+}<br /><br />Enter operator either + or - or * or divide: /
+Enter two operands: 13.456
+4.56
+num2/num1 = 2.95<br /><br />
+                                            <h2 class="ez-toc-section" id="1-the-program-aims-to-reduce-morbidity-and-mortality-from-tuberculosis-by-scaling-up-and-sustaining-coverage-of-dotsimplementation-ensuring-provision-of-quality-tb-services-and-reducing-out-of-pocke">
+                            3. 1. The program aims to reduce morbidity and mortality from tuberculosis by scaling-up and sustaining coverage of DOTSimplementation, ensuring provision of quality TB Services and reducing out-of-pocket expenses related to TB caro.A. National TB Control ProgramC. Malaria Control ProgramB. National HIV, AIDS and STI Prevention and Control Program D. National Dengue Control Program2. Aims to prevent the further spread of HIV infection and reduce the Impact of the disease on individuals, families, sectorsand communities by improving the coverage and quality of prevention programs for persons at most risk, vulnerable andliving with HIV.A. National TB Control ProgramC. Malaria Control ProgramB. National HIV, AIDS and STI Prevention and Control Program D. National Dengue Control Program3. Aims to significantly reduce malaria burden so that it will no longer affect the socio-economic development ofindividuals and families in endemic areas.A. National TB Control ProgramC. Malaria Control ProgramB. National HIV, AIDS and STI Prevention and Control Program D. National Dengue Control Program4. It is directed towards community-based dengue prevention and controlin endemic areas.A. National TB Control ProgramC. Malaria Control ProgramB. National HIV, AIDS and STI Prevention and Control Program D. National Dengue Control Program5. The Rabies Program is jointly implemented by the DOH with the Department of Agriculture (lead agency and theresponsible for canine immunization), Department of Education and the Department of Interior and Local Government(DILG). It aims to eliminate rabies in the Philippines by 2020.A. National Rabies Prevention and Control ProgramB. DOH Major Programs and Projects Classified according to the KRAs of the Social ContractC. Malaria Control ProgramD. National HIV, AIDS and STI Prevention and Control Program6. Aims to develop a comprehensive approach and strategies to increase awareness, information and continuingeducation of health personnel, high-risk individuals, and patients.A. National Rabies Prevention and Control ProgramB. DOH Major Programs and Projects Classified according to the Kras of the Social ContractC. Malaria Control ProgramD. National HIV, AIDS and STI Prevention and Control Program7. IDED Stands forA. Infectious Diseases for Elimination DivisionB. Infectious Diseases for Elimination DepartmentC. Infectious Dilemma for Elimination DivisionD. Interventions for Diseases for Elimination Division8. ODD stands forA. Occupational Diseases DepartmentB. Occupational Distance DivisionC. Occupational Diseases DivisionD. Occurrence Diseases Division9. ERDD stands forA. Educational Related Diseases DivisionB. Experience-Related Diseases DivisionC. Ecological-Related Diseases DivisionD. Environmental-Related Diseases Division​</h2><br />
+                        <p><strong>Answer:</strong></p>ABCDAABCD<p><strong>Explanation:</strong></p><p> hope it helps :)</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="1-what-function-should-be-used-when-adding-the-cells-specified-by-the-condition-or-criteria-a-sumproduct-b-sumif-c-sumifs-d-sumso-2-it-returns-the-integer-portion-of-a-division-a-quotient-b">
+                            4. 1. What function should be used when adding the cells specified by the condition or criteria? a. SUMPRODUCT b. SUMIF C. SUMIFS d. SUMSO 2. It returns the integer portion of a division. a. Quotient b. Sum c. Product d. Power 3.what is the most popular electronic spreadsheet program used today ?a.plus (+) b.minus (-)c. equal (=)d.multiply (×)4.it is an application program designed to perform basic mathematical and arithmetic operations.a.electronic spreadsheet b.slide presentation c.word document d.publisher ​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1. B. SUMIF</p><p><strong>SUMIF </strong>function should be used when adding the cells specified by the condition or criteria.</p><p>2. A. Quotient</p><p><strong>Quotient</strong> returns the integer portion of a division. </p><p>3. <strong>Microsoft </strong><strong>Excel</strong> <strong>none </strong><strong>of </strong><strong>the </strong><strong>choices </strong></p><p><strong>Microsoft </strong><strong>Excel </strong>is the most popular electronic spreadsheet program used today.</p><p>4. A. Electronic spreadsheet </p><p><strong>Electronic spreadsheet </strong>is an application program designed to perform basic mathematical and arithmetic operations.</p><br />
+                                            <h2 class="ez-toc-section" id="1-what-is-considered-as-one-of-the-core-programs-of-the-philippine-populationmanagementa-popcomb-curriculum-and-learning-management-divisionc-adolescent-health-and-youth-development-programd-ip">
+                            5. 1. What is considered as one of the core programs of the Philippine PopulationManagement?A.. POPCOMB. Curriculum and Learning Management DivisionC. Adolescent Health and Youth Development ProgramD. iPLAN​</h2><br />
+                        <p><strong>Answer:</strong></p><p>c</p><p><strong>Explanation:</strong></p><p><strong>yan</strong><strong> </strong><strong>po</strong><strong> </strong><strong>siguro</strong><strong> </strong><strong>di</strong><strong> </strong><strong>ko</strong><strong> </strong><strong>alam</strong><strong>.</strong></p><br />
+                                            <h2 class="ez-toc-section" id="4-one-of-their-pamary-responsibilities-is-to-develop-policies-standards-and-guidelines-wanal-disease-a-occupational-diseases-division-fecious-diseases-for-laminaton-division-cerra-neammuable-diseas">
+                            6. 4. One of their pamary responsibilities is to develop policies, standards, and guidelines wanal disease A Occupational Diseases Division fecious Diseases for laminaton Division Cerra Neammuable Diseases Division D Infectious Diseases for Prevention and Control Division 5. h hatte division develops policies, standards and guidelines on women and mens health diseases A Lifestyle Related Diseases Division B Chadrens Health Development Division C Women and Men's Health Development Division D Essential Non-Communicable Diseases Owvision 6 .Wych or the division mendoneu volow develops policies. Standards, and oudends on children's health diseases? A Children's Health Development Division B. Environmental- Rited Diseases Division Inichous Diseases for Elimination Division D. Essenbal Non-Communicable Diseases Division This civision develops 7.policies, standards, and guidelines for the prevention and control or non-communicable diseases. A Environmental-Related Diseases Division B. Infectious Diseases for Elimination Division C Essential Non-Communicable Diseases Division 0. Infectious Diseases for Prevention and Control Division e. They develop policies, standards and guidelines for the preventon and control of lifestyle-related diocases A Lesiye Rekli Dieses Division 8. Children's Health Development Division C Infectious Diseases for Elimination Division D. Women and Men's Health Development Division 9. One of their primary responsibilities is to develop plans, programs, and projects to pode servec sokages for children's health diseases A Lifestvie-Related Diseases Division D Children's Health Development Division C Women and Men's Health Development Division O Locosta: Non Communicab Diseases Division​</h2><br />
+                        <p><strong>Answer:</strong></p><p>4. B</p><p>5.a</p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p><strong>Explanation:</strong></p><p>Pa brainliest po pls </p><br />
+                                            <h2 class="ez-toc-section" id="%c2%a0this-study-attempted-to-evaluate-the-status-and-extent-of-implementation-of-the-computer-education-program-in-the-division-of-rizal-sy-2015-2016-as-perceived-by-teacher-and-student-respondents">
+                            7.  This study attempted to evaluate the status and extent of implementation of the Computer Education Program in the Division of Rizal SY 2015-2016 as perceived by teacher and student respondents. This statement is an example of? A. Objective or Purpose of the StudyB. Specific Question C. Research Question D. Introduction ​</h2><br />
+                        <p><strong>Answer:</strong></p><p>A.</p><p><strong>Explanation:</strong></p><p>A po ang sagot promise nasa module ko yan check ang binigay ni ma'am</p><br />
+                                            <h2 class="ez-toc-section" id="1-which-of-the-following-is-not-a-manifest-function-of-educationa-cultural-innovationc-socializationb-courtshipd-transmission-of-culture2-conflict-theorists-see-sorting-as-a-way-toa-challenge-gif">
+                            8. 1. Which of the following is not a manifest function of education?a Cultural innovationc Socializationb. Courtshipd. Transmission of Culture2. Conflict theorists see sorting as a way toa Challenge gifted studentsb. Help students who need additional supportс. Reinforce divisions of economic statusd. Teach respect for authority3. The functionalist theory sees education as serving the needs ofa Societyc. Familiesb. Individualsd The government4. What term describes the assignment of students to specific education programs on the basis of previoustest scores or grades and their perceived abilities?a. Hidden curriculumc Labelingb. Self-fulfilling prophecyd. Tracking5. Which of the following is an example of nonformal education?a Primary schoolingc. Adult night classesb. Senior high schoold. Doctorate program​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.A</p><p>2.B</p><p>3.C</p><p>4.B</p><p>5.D</p><p></p><p></p><p>if in wrong comment </p><br />
+                                            <h2 class="ez-toc-section" id="_____1-these-are-used-exclusively-by-the-pascal-programming-languages-such-as-commands-standard-functions-and-proceduresa-symbols-c-reserved-wordsb-modulus-divisiond-integer-division-_____-12-it-i">
+                            9. _____1 These are used exclusively by the Pascal Programming languages such as commands standard functions and proceduresa. Symbols c. Reserved Wordsb. Modulus Divisiond. Integer Division _____ 12 It is the first statement in a programa. Declaration Areas c. Heading b. Body of the programd. End of the Program ______ 13 It consist usually with the list of variables. a. Declaration Areas C. Headingb Body of the program d End of the Program _______ 14. It is where data types, constants, variables are defined together with procedures and functions.a. Declaration Areas c. Heading b. Body of the program d End of the Program _________15 These are memory location which can assign a specific name. Variables Labels b Symbols d. Types_______16 It is in nature it allows for effective teaching computer programming techniquesa. Simplicity and expressiveb. built in datac. Areas of applicationd. user defined data types_____17 It entails the learning environmenta. Simplicity and expressiveb. built in datac. Areas of applicationd. user defined data types​</h2><br />
+                        <strong>Answer:</strong><p></p>1. C. 12. D. 13. A. 14. A. 15. B. 16. A. 17. B. <br />
+                                            <h2 class="ez-toc-section" id="1-it-is-a-name-that-represents-either-a-number-or-a-stringa-stringb-constantc-variabled-none-of-these2-this-programming-language-was-developed-by-john-kemeny-and-thomaskurtz-in-thea-1950sb-196">
+                            10. 1. It is a name that represents either a number or a stringa. stringb. constantC. variabled. none of these2. This programming language was developed by John Kemeny and ThomasKurtz in thea. 1950sb. 1960sC. 1970sd. 1940S3. These are special symbols used to indicate arithmetic operationsa. string b. operators C. constantd. variable4. It is a sequence of constants and variables joined by arithmetic operatorsa. constant b. variablesc. expressionsd. string5. It has the highest precedence of the arithmetic operatorsa. ExponentiationC. Divisionb. Multiplicationd. Addition​</h2><br />
+                        <p><strong>Answer:</strong></p>CDACA<p><strong>Explanation:</strong></p>PABRAINLIEST PO TY<p><strong>Answer:</strong></p>DCCAA<p><strong>Explanation:</strong></p><p>Pa vote po at heart sana makatulong</p><br />
+                                            <h2 class="ez-toc-section" id="1-what-do-you-call-to-the-operators-like-addition-subtraction-divison-and-multiplicationa-pemdasb-arithmetic-operatorsc-artithmetic2-other-opertors-includea-mod-round-b-pick-randomc">
+                            11. 1.What do you call to the operators like addition, subtraction, divison, and multiplication?a. PEMDASb. arithmetic operatorsc. artithmetic2. other opertors include:a. mod &amp; round b. pick randomc. variable3. this operator returns the remainder of division operatora. roundb. pickc. mod4. it lets a program picka a random number according to the specified range.a. modb. pick ramdomc. round5. it tells the sprite to show the next costume below it.a. next costumeb. switch costumec. switch backdrop6. this block lets the sprite switch to a specific costume.a. next costume b. switch costumec. switch backdrop7. it enables to change to another backdrop at any point in the program.a. next costumeb. swtich costumec  switch backdrop​</h2><br />
+                        <p><strong>Answer:</strong></p><p><strong>1</strong><strong>.</strong><strong>B</strong><strong>.</strong><strong> </strong><strong>A</strong><strong>r</strong><strong>i</strong><strong>t</strong><strong>h</strong><strong>m</strong><strong>e</strong><strong>t</strong><strong>i</strong><strong>c</strong><strong> </strong><strong>O</strong><strong>p</strong><strong>e</strong><strong>r</strong><strong>a</strong><strong>t</strong><strong>o</strong><strong>r</strong><strong>s</strong></p><p><strong>2</strong><strong>.</strong><strong>A</strong><strong>.</strong><strong>m</strong><strong>o</strong><strong>d</strong><strong> </strong><strong>&amp;</strong><strong> </strong><strong>R</strong><strong>o</strong><strong>u</strong><strong>n</strong><strong>d</strong></p><p><strong>3</strong><strong>.</strong><strong>C</strong><strong>.</strong><strong>m</strong><strong>o</strong><strong>d</strong></p><p><strong>4</strong><strong>.</strong><strong>B</strong><strong>.</strong><strong>P</strong><strong>i</strong><strong>c</strong><strong>k</strong><strong> </strong><strong>R</strong><strong>a</strong><strong>n</strong><strong>d</strong><strong>o</strong><strong>m</strong></p><p><strong>5</strong><strong>.</strong><strong>A</strong><strong>.</strong><strong>N</strong><strong>e</strong><strong>x</strong><strong>t</strong><strong> </strong><strong>C</strong><strong>o</strong><strong>s</strong><strong>t</strong><strong>u</strong><strong>m</strong><strong>e</strong></p><p><strong>6</strong><strong>.</strong><strong>C</strong><strong>.</strong><strong>S</strong><strong>w</strong><strong>i</strong><strong>t</strong><strong>c</strong><strong>h</strong><strong> </strong><strong>B</strong><strong>a</strong><strong>c</strong><strong>k</strong><strong>d</strong><strong>r</strong><strong>o</strong><strong>p</strong></p><p><strong>7</strong><strong>.</strong><strong>B</strong><strong>.</strong><strong>S</strong><strong>w</strong><strong>i</strong><strong>t</strong><strong>c</strong><strong>h</strong><strong> </strong><strong>C</strong><strong>o</strong><strong>s</strong><strong>t</strong><strong>u</strong><strong>m</strong><strong>e</strong></p><p><strong>Explanation:</strong></p><p><strong>T</strong><strong>h</strong><strong>a</strong><strong>n</strong><strong>k</strong><strong> </strong><strong>m</strong><strong>e</strong><strong> </strong><strong>L</strong><strong>a</strong><strong>t</strong><strong>e</strong><strong>r</strong><strong> </strong><strong>;</strong><strong>)</strong></p><br />
+                                            <h2 class="ez-toc-section" id="which-of-the-following-operators-is-not-used-to-create-control-in-a-programa-divisionb-equal-toc-less-thand-logical-or">
+                            12. Which of the following operators is NOT used to create control in a program?
+a.
+division
+b.
+equal to
+c.
+less than
+d.
+logical or</h2><br />
+                        <p><strong>Answer:</strong></p><p>A.DIVISION</p><p><strong>Explanation:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="daming-task-2-arrange-the-following-facts-to-form-a-news-report-a-teacher-induction-program-is-a-training-given-to-the-newly-hired-teachers-one-of-its-purposes-is-to-let-them-understand-their-roles">
+                            13. Daming Task 2: Arrange the following facts to form a news report A. Teacher Induction Program is a training given to the newly hired teachers. One of its purposes is to let them understand their roles and responsibilities. B. The Division of Solera, through the leadership of the superintendent, Melanie Roxas, EdD. Conducted the Teacher Induction Program to 320 newly hired teachers at Liza's Resort, Zamboanga Sibugay on July 2-4 this year. C. Education Program Supervisors who were trained on TIP were facilitators. D. Division of Solera conducts Teacher Induction Program to 320 newly hired Teachers.​pa help po need ko napo</h2><br />
+                        <p><strong>Answer:</strong></p><p>The Division of Solera,</p><p></p><p>through the leadership of the</p><p></p><p>Conducted the Teacher Induction Program</p><p></p><p>superintendent, Melanie Roxas, EdD. to 320 newly hired teachers at Liza's this year. Teacher Induction Program is a</p><p></p><p>Resort, Zamboanga Sibugay on July 2-4</p><p></p><p>training given to the newly hired teachers.</p><p></p><p>One of its purposes is to let them</p><p></p><p>understand their roles and responsibilities.</p><p></p><p>Education Program Supervisors who were trained on TIP were facilitators.</p><p><strong>Explanation:</strong></p><p>Yan Po Brainlist Po ty</p><br />
+                                            <h2 class="ez-toc-section" id="program-course-section-assessment-s-answer-the-following-correctly-1-determine-if-the-specified-operation-is-a-binary-operation-on-the-given-se-justify-your-answer-a-the-operation-subtraction-o">
+                            14. Program course / Section: Assessment #s Answer the following correctly 1. Determine if the specified operation is a binary operation on the given se Justify your answer. a. The operation subtraction on the set of odd numbers. b. The operation division on the set of natural numbers. C. The operation defined by a'b = 5a + b on the set of even numbers. d. The operation " defined by a*b = 2a – b on the set of whole numbers. e. The operation * defined by a'b = on the set of rational numbers.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>ty</p><p><strong>Step-by-step explanation:</strong></p><p>wewewe</p><p>we</p><p>wewewewewe</p><br />
+                                            <h2 class="ez-toc-section" id="4-one-of-their-pamary-responsibilities-is-to-develop-policies-standards-and-guidelines-wanal-disease-a-occupational-diseases-division-fecious-diseases-for-laminaton-division-cerra-neammuable-diseas">
+                            15. 4. One of their pamary responsibilities is to develop policies, standards, and guidelines wanal disease A Occupational Diseases Division fecious Diseases for laminaton Division Cerra Neammuable Diseases Division D Infectious Diseases for Prevention and Control Division 5. h hatte division develops policies, standards and guidelines on women and mens health diseases A Lifestyle Related Diseases Division B Chadrens Health Development Division C Women and Men's Health Development Division D Essential Non-Communicable Diseases Owvision 6 .Wych or the division mendoneu volow develops policies. Standards, and oudends on children's health diseases? A Children's Health Development Division B. Environmental- Rited Diseases Division Inichous Diseases for Elimination Division D. Essenbal Non-Communicable Diseases Division This civision develops 7.policies, standards, and guidelines for the prevention and control or non-communicable diseases. A Environmental-Related Diseases Division B. Infectious Diseases for Elimination Division C Essential Non-Communicable Diseases Division 0. Infectious Diseases for Prevention and Control Division e. They develop policies, standards and guidelines for the preventon and control of lifestyle-related diocases A Lesiye Rekli Dieses Division 8. Children's Health Development Division C Infectious Diseases for Elimination Division D. Women and Men's Health Development Division 9. One of their primary responsibilities is to develop plans, programs, and projects to pode servec sokages for children's health diseases A Lifestvie-Related Diseases Division D Children's Health Development Division C Women and Men's Health Development Division O Locosta: Non Communicab Diseases Division​</h2><br />
+                        <p><strong>Explanation:</strong></p><p>4. One of their pamary responsibilities is to develop policies, standards, and guidelines wanal disease A Occupational Diseases Division fecious Diseases for laminaton Division Cerra Neammuable Diseases Division D Infectious Diseases for Prevention and Control Division 5. h hatte division develops policies, standards and guidelines on women and mens health diseases A Lifestyle Related Diseases Division B Chadrens Health Development Division C Women and Men's Health Development Division D Essential Non-Communicable Diseases Owvision </p><p>6 .Wych or the division mendoneu volow develops policies. Standards, and oudends on children's health diseases? A Children's Health Development Division B. Environmental- Rited Diseases Division Inichous Diseases for Elimination Division D. Essenbal Non-Communicable Diseases Division This civision develops 7.policies, standards, and guidelines for the prevention and control or non-communicable diseases. A Environmental-Related Diseases Division B. Infectious Diseases for Elimination Division C Essential Non-Communicable Diseases Division 0. Infectious Diseases for Prevention and Control Division e. They develop policies, standards and guidelines for the preventon and control of lifestyle-related diocases A Lesiye Rekli Dieses Division</p><p>8. Children's Health Development Division C Infectious Diseases for Elimination Division D. Women and Men's Health Development Division </p><p>9. One of their primary responsibilities is to develop plans, programs, and projects to pode servec sokages for children's health diseases A Lifestvie-Related Diseases Division D Children's Health Development Division C Women and Men's Health Development Division O Locosta: Non Communicab Diseases Division</p><br />
+                                            <h2 class="ez-toc-section" id="learning-task-4-directions-arrange-the-following-facts-to-form-a-news-report-write-your-answer-in-a-paragraph-form-in-your-notebook-a-teacher-induction-program-is-a-training-given-to-the-newly-hir">
+                            16. Learning Task 4 Directions: Arrange the following facts to form a news report. Write your answer in a paragraph form in your notebook. A. Teacher Induction Program is a training given to the newly hired teachers. One of its purposes is to let them understand their roles and responsibilities. B. The Division of Solera, through the leadership of the superintendent, Melanie Roxas, EdD. Conducted the Teacher Induction Program to 320 newly hired teachers at Liza's Resort, Zamboanga Sibugay on July 2-4 this year. C. Education Program Supervisors who were trained on TIP were facilitators. D, Division of Solera conducts Teacher Induction Program to 320 newly hired Teachers.pakisagot ng maayos. :/​tank you </h2><br />
+                        <p><strong>Answer:</strong></p><p><strong>The Division of Solera,</strong></p><p><strong>through the leadership of the</strong></p><p><strong>Conducted the Teacher Induction Program</strong></p><p><strong>superintendent, Melanie Roxas, EdD. to 320 newly hired teachers at Liza's this year. Teacher Induction Program is a</strong></p><p><strong>Resort, Zamboanga Sibugay on July 2-4</strong></p><p><strong>training given to the newly hired teachers.</strong></p><p><strong>One of its purposes is to let them</strong></p><p><strong>understand their roles and responsibilities.</strong></p><p><strong>Education Program Supervisors who were trained on TIP were facilitators.</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="create-a-program-that-will-ask-the-user-to-input-integer-values-for-variables-x-and-y-after-asking-for-values-of-variables-x-and-y-the-program-will-ask-the-user-to-input-the-case-she-wanted-the-prog">
+                            17. Create a program that will ask the user to input integer values for variables x and y. After asking for values of variables x and y, the program will ask the user to input the case she wanted the program to perform and display on the screen the result of the operation. Use default for inputs that are not in the cases. Below are the cases and its corresponding mathematical operation. c++ language
+ a=addition
+ b=subtraction
+ c=multiplication
+ d=division</h2><br />
+                        <p><strong>Answer:</strong></p><p>c.</p><p><strong>Explanation:</strong></p><p>Sana po makatolong sa inyo</p><br />
+                                            <h2 class="ez-toc-section" id="7-cebu-province-division-has-opened-two-ways-for-enrollment-ofstudents-online-and-via-phone-call-a-act-of-listing-pupilsc-act-of-assessing-pupilsb-act-of-grading-pupilsd-act-of-teaching-pupilsd">
+                            18. 7. Cebu Province Division has opened two ways for enrollment ofstudents; online and via phone call.a. act of listing pupilsc. act of assessing pupilsb. act of grading pupilsd. act of teaching pupilsd. offers8. DepEd Commons expands features for ALS learners.b. discountsc. traitsa. aspects9. Social Amelioration Program (SAP) beneficiaries have received their cashsubsidy.a. giversb. recipientsd. volunteersc. sponsors10. LGU Consolacion distributed relief goods to its constituents.a. leadersb. non-members c. membersd. non-votersVERSION​</h2><br />
+                        <p><strong>Answer:</strong></p><p>7.D</p><p>8.B.</p><p>9.C. or B</p><p>10.A.</p><br />
+                                            <h2 class="ez-toc-section" id="learning-task-4-directions-arrange-the-following-facts-to-form-a-news-report-write-your-answer-in-a-paragraph-form-in-your-notebook-a-teacher-induction-program-is-a-training-given-to-the-newly-hir">
+                            19. Learning Task 4 Directions: Arrange the following facts to form a news report. Write your answer in a paragraph form in your notebook. A. Teacher Induction Program is a training given to the newly hired teachers. One of its purposes is to let them understand their roles and responsibilities. B. The Division of Solera, through the leadership of the superintendent, Melanie Roxas, EdD. Conducted the Teacher Induction Program to 320 newly hired teachers at Liza’s Resort, Zamboanga Sibugay on July 2-4 this year. C. Education Program Supervisors who were trained on TIP were facilitators. D, Division of Solera conducts Teacher Induction Program to 320 newly hired Teachers. _________________ _______________________________________________________________________________________________________ _____________________________________________________________________________________________________________ _____________________________________________________________________________________________________________ _____________________________________________________________________________________________________________ ______________________________________________________________________________________________________________ need now please</h2><br />
+                        <p><strong>Answer:</strong></p><p>The Division of Solera,</p><p></p><p>through the leadership of the</p><p></p><p>Conducted the Teacher Induction Program</p><p></p><p>superintendent, Melanie Roxas, EdD. to 320 newly hired teachers at Liza's this year. Teacher Induction Program is a</p><p></p><p>Resort, Zamboanga Sibugay on July 2-4</p><p></p><p>training given to the newly hired teachers.</p><p></p><p>One of its purposes is to let them</p><p></p><p>understand their roles and responsibilities.</p><p></p><p>Education Program Supervisors who were trained on TIP were facilitators.</p><p><strong>Explanation:</strong></p><p>Hope its help </p><p></p><p>Brainlist Po Ty</p><br />
+                                            <h2 class="ez-toc-section" id="in-ms-excel-a-chart-is-a-visual-representation-of-data-in-worksheet-of-the-spreadsheet-program-what-are-the-symbols-use-for-the-following-1-multiplication-c2-division-3-addition-4-subtraction-5">
+                            20. In MS Excel, a chart is a visual representation of data in worksheet of the spreadsheet program. What are the symbols use for the following? 1. Multiplication C2. Division 3. Addition 4 Subtraction 5. Equal​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.×</p><p>2.÷</p><p>3.+</p><p>4.-</p><p>5.=</p><p><strong>Explanation:</strong></p><p>correct me if I'm wrong</p><br />
+                                            <h2 class="ez-toc-section" id="which-of-the-following-is-not-an-example-of-social-mobilization-a-edsa-revolution-b-human-rights-rally-c-division-presscon-d-livelihood-program-meeting-%e2%80%8b">
+                            21. which of the following is not an example of social mobilization A. edsa revolution B. human rights rally C. division presscon D. livelihood program meeting ​</h2><br />
+                        <p><strong>Answer:</strong></p><p>c. division presscon</p><p>sana Maka ruling</p><br />
+                                            <h2 class="ez-toc-section" id="which-of-the-following-statements-shown-below-is-not-essential-in-linear-programmingselect-onea-limited-resourcesb-homogeneityc-equalityd-divisibilityi-brainliest-ko-yung-maayos-na-sagot">
+                            22. Which of the following statements shown below is NOT essential in Linear Programming?
+Select one:
+a.
+Limited Resources
+b.
+Homogeneity
+c.
+Equality
+d.
+Divisibility
+i brainliest ko yung maayos na sagot!</h2><br />
+                        <p><strong>Answer:</strong></p><p>a</p><p></p><p> basya </p><p><strong>Step-by-step explanation:</strong></p><p>jdoc c dkdockdm,soakxmdmxo</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="the-most-popular-electronic-spreadsheet-program-that-we-used-today-is-microsoft-excel-which-function-returns-the-integer-portion-of-a-divisiona-powerb-productc-quotientd-sum%e2%80%8b">
+                            23. The most popular electronic spreadsheet program that we used today is Microsoft Excel. Which function returns the integer portion of a division?A PowerB. ProductC. QuotientD. Sum​</h2><br />
+                        <p><strong>Answer:</strong></p><p><strong>C </strong><strong>-</strong><strong> </strong><strong>Quotient</strong></p><p><strong>Explanation:</strong></p><p></p><p><strong>Hope </strong><strong>that </strong><strong>helps </strong><strong>you.</strong></p><p><strong>Brainlist </strong><strong>me </strong><strong>if </strong><strong>you </strong><strong>like.</strong></p><p></p><p><strong>-</strong><strong> </strong><strong>GumbbleBee</strong></p><br />
+                                            <h2 class="ez-toc-section" id="7-this-division-develops-policies-standards-and-guidelines-for-the-prevention-and-control-of-non-communicable-diseases-a-environmental-related-diseases-division-b-infectious-diseases-for-elimina">
+                            24. 7. This division develops policies, standards, and guidelines for the prevention and control of non-communicable diseases. A. Environmental-Related Diseases Division B. Infectious Diseases for Elimination Division C. Essential Non-Communicable Diseases Division D. Infectious Diseases for Prevention and Control Division 8. They develop policies, standards and guidelines for the prevention and control of lifestyle-related diseases. A. Lifestyle-Related Diseases Division B. Children's Health Development Division C. Infectious Diseases for Elimination Division D. Women and Men's Health Development Division 9. One of their primary responsibilities is to develop plans, programs, and projects to provide service packages for children's health diseases. A. Lifestyle-Related Diseases Division B. Children's Health Development Division C. Women and Men's Health Development Division D. Essential Non-Communicable Diseases Division​</h2><br />
+                        <p><strong>Answer:</strong></p><p>7.c</p><p>8.a</p><p>9.b</p><p><strong>Explanation:</strong></p><p>tapos napo meron Rin Ako nyan</p><br />
+                                            <h2 class="ez-toc-section" id="health-notebookgood-day-i-won%e2%80%99t-be-around-today-kindly-do-this-in-our-mapeh-time-pls-let-your-class-president-and-class-secretary-sign-your-notebooks-thank-you-what-i-knowpaper-______1">
+                            25. Health   NotebookGood day, I won’t be around today. Kindly do this in our MAPEH time. Pls let your class president and class secretary sign your notebooks. Thank you. What I Knowpaper.______1. Which of the division mentioned below develops policies, standards, and guidelines for the elimination of infectious disease?A. OccupationalDiseasesDivisionB. Environmental-RelatedDiseasesDivisionC. InfectiousDiseasesforEliminationDivisionD. EssentialNon-CommunicableDiseasesDivision______2. This division develops policies, standards, and guidelines for the prevention and control of infectious disease.A. Environmental-Related Diseases DivisionB. InfectiousDiseasesforEliminationDivisionC. EssentialNon-CommunicableDiseasesDivisionD. Infectious Diseases for Prevention and Control Division______3. They develop policies, standards and guidelines on environmental-related diseases.A. OccupationalDiseasesDivisionB. Environmental-RelatedDiseasesDivisionC. EssentialNon-CommunicableDiseasesDivision D. Women and Men’s Health Development Division______4. One of their primary responsibilities is to develop policies, standards, and guidelines on occupational diseases.A. Occupational Diseases DivisionB. Infectious Diseases for Elimination DivisionC. Essential Non-Communicable Diseases DivisionD. Infectious Diseases for Prevention and Control Division______5. This health division develops policies, standards and guidelines on women and men’s health diseases.A. Lifestyle-Related Diseases DivisionB. Children’s Health Development DivisionC. Women and Men’s Health Development Division D. Essential Non-Communicable Diseases Division______6. Which of the division mentioned below develops policies, standards, and guidelines on children’s health diseases?A. Children’s Health Development DivisionB. Environmental-Related Diseases DivisionC. Infectious Diseases for Elimination DivisionD. Essential Non-Communicable Diseases Division______7. This division develops policies, standards, and guidelines for the prevention and control of non-communicable diseases.A. Environmental-Related Diseases DivisionB. Infectious Diseases for Elimination DivisionC. Essential Non-Communicable Diseases DivisionD. Infectious Diseases for Prevention and Control Division______8. They develop policies, standards and guidelines for the prevention and control of lifestyle- related diseases.A. Lifestyle-Related Diseases DivisionB. Children’s Health Development DivisionC. Infectious Diseases for Elimination DivisionD. Women and Men’s Health Development Division______9. One of their primary responsibilities is to develop plans, programs, and projects to provide service packages for children’s health diseases.A. Lifestyle-Related Diseases DivisionB. Children’s Health Development DivisionC. Women and Men’s Health Development Division D. Essential Non-Communicable Diseases Division______10. This division develops plans, programs and projects to provide packages of services for women and men health diseases.A. Lifestyle-Related Diseases DivisionB. Children’s Health Development DivisionC. Infectious Diseases for Elimination DivisionD. Women and Men’s Health Development Division​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1) B</p><p>2) D</p><p>3) B</p><p>4) D</p><p>5) C</p><p>6) A</p><p>7) C</p><p>8) A</p><p>9) B</p><p>10) D</p><p><strong>Explanation:</strong></p><p>Hindi ko po alam kung tama o mali </p><p>ang sagot ko po </p><br />
+                                            <h2 class="ez-toc-section" id="1-write-a-c-program-that-will-print-numbers-divisible-by-3-and-7-between-the-range-provided-by-the-user-2-write-a-c-program-that-repeatedly-print-the-value-of-the-variable-dnumber-decreasing-i">
+                            26. 1. Write a C++ program that will print numbers divisible by 3 and 7 between the range provided by the user. 2. Write a C++ program that repeatedly print the value of the variable dNumber, decreasing it by 0.25 each time, as long as dNumber remains positive. The user will input the value of dNumber. 3. Write a C++ program that will print the square roots of the first 30 odd positive integers.ps: need proper answer​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.2²¼2za1²½ correct me if imwrong</p><br />
+                                            <h2 class="ez-toc-section" id="healthidentification-read-each-item-carefully-and-choose-the-letter-of-the-best-answer-write-your-answer-in-alengthwise-sheet-of-paper-1-people-say-that-hands-are-the-dirtiest-part-of-the-body-wha">
+                            27. HealthIDENTIFICATION: Read each item carefully and choose the letter of the best answer. Write your answer in alengthwise sheet of paper.1. People say that hands are the dirtiest part of the body. What do you think is the main reason for this?A. You eat with your bare hands by washing it thoroughly.B. You are observing 1 meter distance to avoid from touching others.C. You are using a face shield to get off your hands from your face.D. Your hands are used in touching everything.2. Which of the following statement is FALSE?A. If you are sick, the air that comes out of your mouth when you cough or sneeze may containgerms.B. It is important to wash your hands even if they do not look dirty.C. When you are sick, it is important to stay at home to get well sooner and will not spread germs.D. Vaccines cannot prevent many infectious diseases.3. What type of disease is one that is caused by newly discovered infectious agent that is threatening to increase in thenear future?A. Communicable DiseaseC. Non communicable DiseaseB. Emerging Infectious DiseaseD. Re-emerging Infectious Disease4. Another type of disease that is one which was previously controlled but once again has risen to be a significant healthproblem.A. Communicable DiseaseC. Non communicable DiseaseB. Emerging Infectious DiseaseD. Re-emerging Infectious Disease5. What agency is responsible in developing policies, standards and guidelines for the elimination of infectious diseases?A. Environmental-Related Diseases DivisionC. Lifestyle-Related Diseases DivisionB. Infectious Diseases for Elimination DivisionD. Women and Men's Health Development Division6. The agency responsible in developing plans, programs and projects to carry out preventive and control strategiesagainst non-communicable diseases.A. Children's Health Development DivisionC. Infectious Diseases for Prevention and Control DivisionB. Essential Non-Communicable Diseases Division D. Occupational Diseases Division​</h2><br />
+                        <p>That's my answer under the picture ok?</p><p></p>@Carryonlearning<br />
+                                            <h2 class="ez-toc-section" id="write-a-program-that-mimics-a-calculator-the-program-should-take-as-input-two-integers-and-the-operation-to-be-performed-it-should-then-output-the-number-the-operator-and-the-result-for-division">
+                            28. Write a program that mimics a calculator. The program should take as input two integers and the operation to be performed. It should then output the number, the operator and the result. (For division, if the denominator is zero, output an appropriate message). CODING C# ​</h2><br />
+                        <strong>ANSWER</strong><strong>:</strong><p></p><p>#include&lt;iostream&gt;</p><p>using namespace std;</p><p></p><p>int main() {</p><p>int var1, var2;</p><p>char operation;</p><p></p><p>cout &lt;&lt; "Enter the first number : ";</p><p>cin &gt;&gt; var1;</p><p>cout &lt;&lt; endl;</p><p></p><p>cout &lt;&lt;"Enter the operation to be perfomed : ";</p><p>cin &gt;&gt; operation;</p><p>cout &lt;&lt; endl;</p><p></p><p>cout &lt;&lt; "Enter the second nuber : ";</p><p>cin &gt;&gt; var2;</p><p>cout &lt;&lt; endl;</p><p></p><p>bool right_input = false;</p><p>if (operation == '+') {</p><p>cout &lt;&lt; var1 &lt;&lt; " " &lt;&lt; operation &lt;&lt; " " &lt;&lt; var2 &lt;&lt; " = " &lt;&lt; (var1 + var2);</p><p>right_input = true;</p><p>}</p><p>if (operation == '-') {</p><p>cout &lt;&lt; var1 &lt;&lt; " " &lt;&lt; operation &lt;&lt; " " &lt;&lt; var2 &lt;&lt; " = " &lt;&lt; (var1 - var2);</p><p>right_input = true;</p><p>}</p><p>if (operation == '*') {</p><p>cout &lt;&lt; var1 &lt;&lt; " " &lt;&lt; operation &lt;&lt; " " &lt;&lt; var2 &lt;&lt; " = " &lt;&lt; (var1 * var2);</p><p>right_input = true;</p><p>}</p><p>if (operation == '/' &amp;&amp; var2 != 0) {</p><p>cout &lt;&lt; var1 &lt;&lt; " " &lt;&lt; operation &lt;&lt; " " &lt;&lt; var2 &lt;&lt; " = " &lt;&lt; (var1 - var2);</p><p>right_input = true;</p><p>}</p><p>if (operation == '/' &amp;&amp; var2 == 0) {</p><p>cout &lt;&lt; "Error. Division by zero.";</p><p>right_input = true;</p><p>}</p><p>if (!right_input) {</p><p>cout &lt;&lt; var1 &lt;&lt; " " &lt;&lt; operation &lt;&lt; " " &lt;&lt; var2 &lt;&lt; " = " &lt;&lt; "Error;";</p><p>cout &lt;&lt; "Invalid Operation!";</p><p>}</p><p></p><p>cout &lt;&lt; endl;</p><p></p><p>system("pause");</p><p></p><p>return 0;</p><p>}</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="which-of-the-following-statements-shown-below-is-not-essential-in-linear-programmingselect-onea-homogeneityb-limited-resourcesc-equalityd-divisibility">
+                            29. Which of the following statements shown below is NOT essential in Linear Programming?
+Select one:
+a.
+Homogeneity
+b.
+Limited Resources
+c.
+Equality
+d.
+Divisibility</h2><br />
+                        <p><strong>Answer:</strong></p><p>a. Homogeneity</p><p><strong>Step-by-step explanation:</strong></p><p>hope it's helpful</p><br />
+                                            <h2 class="ez-toc-section" id="15-this-health-division-develops-plans-programs-and-projects-to-carry-out-preventive-and-control-stratocies-against-intectious-diseases-a-infectious-diseases-for-elimination-division-b-essentia-no">
+                            30. 15 This health division develops plans, programs, and projects to carry out preventive and control stratocies against intectious diseases A infectious Diseases for Elimination Division B. Essentia! Non Communicable Diseases Division C. Women and Men's Health Developmeni Division Decisis Diseases to Prevention and Control Design​</h2><br />
+                        <p><strong>Answer:</strong></p><p>B PO</p><p><strong>Explanation:</strong></p><p>pa brainliest narin po gold ako ih</p><p></p><p><strong>Answer:</strong></p><p>B.Essentia! Non Communicable Diseases Division</p><p><strong>Explanation:</strong></p><p>tama po yan at</p><p>Pa brainliest po plllsss</p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/6WUZ9E5eAm0?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>health</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pronamedu.github.io/let-s-play-in-japanese.html">Let s Play In Japanese</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pronamedu.github.io/that-s-amazing-in-japanese.html">That s Amazing In Japanese</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pronamedu.github.io/lcm-of-20-and-35.html">Lcm Of 20 And 35</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pronamedu.github.io/a-rectangle-is-a-rhombus-true-or-false.html">A Rectangle Is A Rhombus True Or False</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pronamedu.github.io/mahal-kita-in-pangalatok.html">Mahal Kita In Pangalatok</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pronamedu.github.io/counter-argument-for-cell-phones-in-school.html">Counter Argument For Cell Phones In School</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pronamedu.github.io/balitang-lokal.html">Balitang Lokal</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pronamedu.github.io/magkaugnay-meaning.html">Magkaugnay Meaning</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pronamedu.github.io/pokemon-platinum-zip-file-download.html">Pokemon Platinum Zip File Download</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pronamedu.github.io/baker-s-yeast-chemical-formula.html">Baker s Yeast Chemical Formula</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pronamedu.github.io/5-hours-in-seconds.html">5 Hours In Seconds</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pronamedu.github.io/twinkler-scout-promise-and-law.html">Twinkler Scout Promise And Law</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pronamedu.github.io/iglesia-ni-cristo-tattoo.html">Iglesia Ni Cristo Tattoo</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pronamedu.github.io/singer-sewing-machine-philippines.html">Singer Sewing Machine Philippines</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pronamedu.github.io/tess-s-or-tess.html">Tess s Or Tess</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pronamedu.github.io/tanabata-s-wife-short-story.html">Tanabata s Wife Short Story</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pronamedu.github.io/3-tennis-balls-in-a-cylinder.html">3 Tennis Balls In A Cylinder</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pronamedu.github.io/area-code-sta-rosa-laguna.html">Area Code Sta Rosa Laguna</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pronamedu.github.io/2000-sq-ft-to-sq-meters.html">2000 Sq Ft To Sq Meters</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pronamedu.github.io/earth-s-answer-analysis.html">Earth s Answer Analysis</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://pronamedu.github.io"
+                            itemprop="url">QnA</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://pronamedu.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://pronamedu.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://pronamedu.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://pronamedu.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+    <script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script>
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4739059,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4739059&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>
